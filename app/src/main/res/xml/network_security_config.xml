@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- 全局默认必须是 false，不能动 -->
+    <base-config cleartextTrafficPermitted="false" />
+
+    <!-- 这里必须改成 true！ -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain>httpbin.org</domain>
+    </domain-config>
+</network-security-config>
